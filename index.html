@@ -1,84 +1,89 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Poppy : POP3 Client Library for .NET Applications" />
-
+    <meta name="description" content="Poppy : POP3 Client Library for .NET applications" />
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Poppy</title>
+    <title>Poppy - POP3 Client Library for .NET applications</title>
   </head>
-
   <body>
-
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/eigenein/poppy">Fork Me on GitHub</a>
-
           <h1 id="project_title">Poppy</h1>
-          <h2 id="project_tagline">POP3 Client Library for .NET Applications</h2>
-
+          <h2 id="project_tagline">POP3 Client Library for .NET applications</h2>
           <section id="downloads">
-            <a class="zip_download_link" href="https://github.com/eigenein/poppy/zipball/master">Download this project as a .zip file</a>
-            <a class="tar_download_link" href="https://github.com/eigenein/poppy/tarball/master">Download this project as a tar.gz file</a>
+            <a class="zip_download_link" href="./downloads/Poppy.zip">Download this library as a .zip file</a>
+            <a class="tar_download_link" href="./downloads/Poppy.tar.gz">Download this library as a tar.gz file</a>
           </section>
         </header>
     </div>
-
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+        <h3>About</h3>
+        <p><a href="http://eigenein.info/poppy">Poppy</a> is a small .NET library for interacting with POP3 mail servers.</p>
+        <h3>Features</h3>
+        <p><ul>
+          <li><a href="http://www.ietf.org/rfc/rfc1939.txt">RFC 1939</a>-compliant</li>
+          <li>Optional POP3 commands support</li>
+          <li>SSL support</li>
+          <li>APOP authentication support</li>
+          <li>Lightweight (~20KB)</li>
+          <li>Thread-safe</li>
+          <li>Custom POP3 transport support</li>
+        </ul></p>
+        <h3>Supported Commands</h3>
+        <p>The library supports the following POP3 commands:
+          <strong>STAT</strong>, 
+          <strong>LIST</strong>,
+          <strong>UIDL</strong>,
+          <strong>USER</strong>,
+          <strong>PASS</strong>,
+          <strong>APOP</strong>,
+          <strong>RETR</strong>,
+          <strong>TOP</strong>,
+          <strong>DELE</strong>,
+          <strong>NOOP</strong>,
+          <strong>RSET</strong>,
+          <strong>QUIT</strong>.
+        </p>
+        <h3>Tutorial</h3>
+        <p>Will be soon...</p>
+        <h3>License</h3>
+        <pre><code>Copyright 2012 Pavel Perestoronin
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+     http://www.apache.org/licenses/LICENSE-2.0
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact support@github.com and we’ll help you sort it out.</p>
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.</code></pre>
+        <h3>Contact</h3>
+        <p>For questions or suggestions please contact me directly at <a href="mailto:eigenein%2Bpoppy@gmail.com">eigenein+poppy@gmail.com</a>.</p>
       </section>
     </div>
-
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Poppy maintained by <a href="https://github.com/eigenein">eigenein</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+        <p class="copyright"><a href="http://eigenein.info" target="_blank">Pavel Perestoronin</a> &copy; 2012</p>
       </footer>
     </div>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-26102003-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-26102003-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
   </body>
 </html>
