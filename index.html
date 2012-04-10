@@ -51,7 +51,19 @@
           <strong>QUIT</strong>.
         </p>
         <h3>Tutorial</h3>
-        <p>Will be soon...</p>
+        <h4>Quick Start</h4>
+
+        <pre class="highlight"><span class="k">using</span> <span class="p">(</span><span class="n">Pop3Client</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Pop3Client</span><span class="p">(</span>
+    <span class="s">&quot;pop.example.org&quot;</span><span class="p">,</span> <span class="m">110</span><span class="p">,</span> <span class="k">false</span><span class="p">))</span>
+<span class="p">{</span>
+    <span class="n">client</span><span class="p">.</span><span class="n">Connect</span><span class="p">();</span>
+    <span class="n">client</span><span class="p">.</span><span class="n">Login</span><span class="p">(</span><span class="s">&quot;login&quot;</span><span class="p">,</span> <span class="s">&quot;pass&quot;</span><span class="p">);</span>
+    <span class="n">MessageInformation</span> <span class="n">info</span> <span class="p">=</span> <span class="n">client</span><span class="p">.</span><span class="n">Messages</span><span class="p">.</span><span class="n">First</span><span class="p">();</span>
+    <span class="kt">string</span> <span class="n">message</span> <span class="p">=</span> <span class="n">client</span><span class="p">.</span><span class="n">RetrieveMessage</span><span class="p">(</span><span class="n">info</span><span class="p">.</span><span class="n">MessageNumber</span><span class="p">);</span>
+<span class="p">}</span></pre>
+
+        <h4>Connecting</h4>
+        <p>To be continued ...</p>
         <h3>License</h3>
         <pre><code>Copyright 2012 Pavel Perestoronin
 
